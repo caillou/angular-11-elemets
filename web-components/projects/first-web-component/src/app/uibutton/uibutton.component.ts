@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class UIButtonComponent implements OnInit {
 
   constructor() { }
+  hoi () {
+    console.log('hoi')
+  }
 
   ngOnInit(): void {
   }
