@@ -1,0 +1,17 @@
+{
+  "name": "angular-element",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:elements": "ng build --prod --project elements --output-hashing none && npm run pack:elements",
+    "pack:elements": "cat ./dist/elements/{runtime,polyfills,main}-es5.js > dist/elements/elements.js && ls -lah dist/elements/elements.js",
+    "build:components": "ng build --prod --project components",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/cli": "^11.0.2"
+  }
+}
